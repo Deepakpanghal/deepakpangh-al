@@ -1,0 +1,170 @@
+.container {
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url("images/background.jpeg");
+  
+    
+  }
+  
+  .dice-game {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    width: 50%;
+    height: 81vh;
+    background: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .input-boxes {
+    margin-top: 30px;
+    width: 60%;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+  }
+  .form-heading {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .input-group input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-group input:focus {
+    border-color: #ff4b2b;
+  }
+  
+  .input-group i {
+    position: absolute;
+    color: #ff4b2b;
+    font-size: 17px;
+  }
+  .board-container{
+    display: none;
+  }
+  .gamebord{
+    width: 480px;
+    height: 600px;
+    display: flex;
+
+}
+.photo{
+    height: 100px;
+    width: 120px;
+    border: 7px solid transparent;
+    border-radius: 50%;
+    
+}
+.player1{
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+}
+.player2{
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+}
+.controls{
+    width: 20%;
+    text-align: center;
+    margin: 20px 0 0 0;
+    color: rgb(113, 55, 179);
+    background-color: white;
+}
+.head{
+    height: 200px;
+}
+.middle{
+    height: 200px;
+}
+.score{
+
+  margin-top: 75px;
+}
+.foot{
+    height: 200px;
+}
+.name{
+    margin: 0 0 0 0;
+    color: black;
+}
+.dice6{
+    margin-top: 30px;
+    height: 50px;
+    width: 50px;
+}
+.turni{
+  width: 60px;
+  height: 30px;
+  margin-top: 210px;
+}
+
+.newgame{
+
+  background-color: red;
+  color: white;
+}
+
+.restart{
+
+  background-color: red;
+  color: white;
+  margin-top: 160px;
+}
+
+
+.turni{
+  width: 60px;
+  height: 30px;
+  margin-top: 210px;
+}
+.winner {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0.5;
+  background: url("images/winner-icegif-3.gif");
+  z-index: 100;
+  background-size: cover;
+}
+#firstplayer img[disabled]{
+  cursor: not-allowed;
+
+}
+#secondplayer img[disabled]{
+  cursor: not-allowed;
+
+}
