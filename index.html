@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dice Game</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Dice.css">
+        <script src="/javascript/jquery-3.6.0.js"></script>
+    <script src="/javascript/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+    </head>
+    <body>
+
+        <div class="container">
+        <div class="dice-game">
+            <form class="form-container" id="form-container" onSubmit="onSubmit(event)">
+                <h1 class="form-heading">
+                    Please Enter Game Details
+                </h1>
+                <div class="input-boxes">
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Enter Player 1 Name" required />
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Enter Player 2 Name" required />
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-trophy"></i>
+                        <input type="number" placeholder="Enter Total Score" min="10" max="100" required />
+                    </div>
+                    <div class="input-group button">
+                        <input type=submit value="Start Game" />
+                    </div>
+                </div>
+            </form>
+
+
+        <div class="board-container" id="board-container">
+        <div class="gamebord">
+        <div class="player1" id="player1">
+            <div class="head">
+            <img src="playersphoto.jpeg"  class="photo" >
+            </div>
+
+            <div class="middle">
+                <h1 class="score" id="1pscore">0 </h1>
+            </div>
+
+            <div class="foot" id="firstplayer">
+          <img src="images/dice6.png" class="dice6" onclick="rollDice(1)"/>
+            <h2 class="name">Player1</h2>
+            </div>
+            
+        </div>
+        <div class="controls">
+            <h1>V/S</h1>
+
+            <button type="button" class="newgame" onClick="reset(event)">New Game</button>
+             <button type="button" class="restart" onClick="restart(event)">Restart</button>
+             <img src="images/turn.jpg" class="turni" />
+        
+        </div>
+
+        <div class="player2" id="player2">
+            <div class="head">
+            <img src="playersphoto.jpeg" class="photo" />
+            </div>
+
+            <div class="middle">
+                <h1 class="score" id="2pscore">0</h1>
+            </div>
+
+            <div class="foot" id="secondplayer">
+                <img src="images/dice6.png" class="dice6" onclick="rollDice(2)"/>
+                <h2 class="name">Player2</h2>
+            </div>
+         </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+
+    </body>
+    <script src="dice.js"></script>
+     
+</html>
